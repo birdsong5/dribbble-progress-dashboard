@@ -7,6 +7,7 @@
 
 body {
   height: 100%;
+  width: 100%;
 }
 
 :root {
@@ -98,7 +99,149 @@ body {
   margin-bottom: 20px;
 }
 
+.title {
+  font-weight: 500;
+  color: #222222;
+}
+
+.subTitle {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #b9c2d1;
+}
+
+.largeTitle {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.test a {
+  color: white;
+}
 section.top {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
+  column-gap: 25px;
+  align-content: start;
+}
+
+.exam {
+  background-color: var(--purpleColor);
+  border-radius: var(--borderRadius);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo {
+  border-radius: var(--borderRadius);
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todo i {
+  font-size: 1.3em;
+}
+
+.todoTitle {
+  font-weight: 500;
+}
+
+.todoSub {
+  font-weight: 300;
+}
+
+.homework {
+  background-color: #ffede6;
+  color: var(--orangeColor);
+}
+
+.reading {
+  background-color: #f6f4ff;
+  color: var(--purpleColor);
+}
+
+section.middle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.middle .group-info {
+  box-shadow: 4px 6px 20px lightgray;
+  border-radius: var(--borderRadius);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-homework {
+  background-color: var(--orangeColor);
+  color: white;
+  padding: 20px;
+  border-radius: var(--borderRadius);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+
+.group-homework p,
+.group-homework span {
+  color: white;
+}
+
+.group-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 80px;
+}
+
+.flagProgress img {
+  padding: 7px;
+  box-shadow: 4px 6px 20px lightgray;
+  border-radius: 12px;
+}
+
+progress {
+  border: none;
+  height: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--orangeColor);
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+section.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 25px;
 }
