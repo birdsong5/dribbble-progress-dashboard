@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   height: 100%;
   width: 100%;
@@ -120,11 +119,12 @@ body {
 .test a {
   color: white;
 }
+
 section.top {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   column-gap: 25px;
-  align-items: center;
+  align-content: flex-start;
 }
 
 .exam {
@@ -145,7 +145,8 @@ section.top {
 
 .todo {
   border-radius: var(--borderRadius);
-  padding: 10px 30px;
+
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -177,15 +178,17 @@ section.middle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  margin-top: 35px;
 }
 
 section.middle .group-info {
   box-shadow: 4px 6px 20px lightgray;
   border-radius: var(--borderRadius);
-  padding: 30px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 300px;
 }
 
 .group-header {
@@ -201,7 +204,7 @@ section.middle .group-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 150px;
+  height: 120px;
 }
 
 .group-homework p,
@@ -214,12 +217,12 @@ section.middle .group-info {
   justify-content: space-between;
 }
 
-.progress {
+.flagProgress {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 40px 80px;
+  padding: 40px 60px;
 }
 
 .flagProgress img {
@@ -262,7 +265,7 @@ section.bottom {
 
 .bot > div {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 60%;
   align-items: center;
   justify-content: space-around;
 }
@@ -355,7 +358,7 @@ section.bottom {
 
 .progressBox i {
   color: white;
-  padding: 20px 18px;
+  padding: 16px 16px;
   border-radius: var(--borderRadius);
 }
 
