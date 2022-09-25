@@ -84,6 +84,8 @@ body {
     inset 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+/*MAIN SECTION */
+
 #main-section {
   padding: 0 100px;
   grid-area: m;
@@ -92,8 +94,8 @@ body {
 }
 
 #main-section h2 {
-  font-size: 3.4em;
-  font-weight: 500;
+  font-size: 2.4em;
+  font-weight: 600;
   letter-spacing: 0.3px;
   place-self: end start;
   margin-bottom: 20px;
@@ -111,8 +113,8 @@ body {
 }
 
 .largeTitle {
-  font-size: 2em;
-  font-weight: 500;
+  font-size: 1.6em;
+  font-weight: 600;
 }
 
 .test a {
@@ -122,7 +124,7 @@ section.top {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   column-gap: 25px;
-  align-content: start;
+  align-items: center;
 }
 
 .exam {
@@ -174,6 +176,7 @@ section.top {
 section.middle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 section.middle .group-info {
@@ -244,4 +247,124 @@ section.bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 25px;
+  align-items: center;
+}
+
+.bot {
+  height: 100px;
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--borderRadius);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bot > div {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bot .fa-pencil,
+.bot .fa-spell-check {
+  box-shadow: 4px 6px 20px lightgray;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.1em;
+}
+
+.bot .fa-pencil {
+  color: var(--purpleColor);
+}
+
+.bot .fa-spell-check {
+  color: var(--orangeColor);
+}
+
+/* PROFILE SECTION */
+
+#profile-section {
+  background-color: #f9fafb;
+  padding: 0 100px;
+  grid-area: p;
+  display: grid;
+  grid-template-rows: 30% 15% 55%;
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  width: 110px;
+  border-radius: 50%;
+}
+
+.advertisement {
+  border: var(--border);
+  border-radius: var(--borderRadius);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.advertisement i {
+  border-radius: var(--borderRadius);
+  padding: 12px 15px;
+  box-shadow: 1px 1px 2px lightgray;
+  color: var(--orangeColor);
+}
+
+.progress-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.progressBox {
+  height: 100px;
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.grammar-profile-section .percent {
+  color: var(--purpleColor);
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.dictionary-profile-section .percent {
+  color: var(--orangeColor);
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.reading-profile-section .percent {
+  color: var(--redColor);
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.progressBox i {
+  color: white;
+  padding: 20px 18px;
+  border-radius: var(--borderRadius);
+}
+
+.grammar-profile-section i {
+  background-color: var(--purpleColor);
+}
+.dictionary-profile-section i {
+  background-color: var(--orangeColor);
+}
+.reading-profile-section i {
+  background-color: var(--redColor);
 }
